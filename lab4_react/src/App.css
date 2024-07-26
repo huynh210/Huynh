@@ -1,0 +1,408 @@
+/* Global Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container > header {
+  height: 120px;
+}
+
+.container > nav {
+  background: orange;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > main {
+  flex: 1;
+  display: flex;
+}
+
+.container > main > article {
+  background: antiquewhite;
+  flex: 3;
+}
+
+.container > main > aside {
+  background: lightblue;
+  flex: 1;
+}
+
+/* Navigation Styles */
+.container > nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.container > nav ul li {
+  min-width: 50px;
+  margin: 5px;
+  text-align: center;
+}
+
+.container > nav ul li a {
+  color: white;
+}
+
+.container > nav ul li a:hover {
+  color: darkblue;
+}
+
+/* Home Component Styles */
+.home {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.home > .sp {
+  border: 1px solid darkblue;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home > .sp > h4 {
+  height: 40px;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.home > .sp > img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* SanPhamXemNhieu Component Styles */
+#spxn {
+  padding: 10px;
+}
+
+#spxn > .sp {
+  padding: 10px;
+  border-bottom: 1px solid darkcyan;
+  font-size: 16px;
+  background: white;
+  margin-bottom: 10px;
+}
+
+
+#listsp h1 { font-size: 20px; background-color: darkcyan; color: white; padding: 10px}
+#listsp #data {display: grid; grid-template-columns: auto auto auto; }
+#listsp #data> .sp { border: 1px solid darkblue;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+#listsp #data > .sp > h4 { height: 40px; font-size: 18px;}
+#listsp #data > .sp > img { max-width: 100%; height: 150px; }
+
+
+#chitiet {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#row1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#trai {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+#trai img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#phai {
+  flex: 2;
+  padding: 10px;
+}
+
+#phai h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#phai p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+#phai span {
+  font-weight: bold;
+}
+
+#row2 {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.thanhphantrang { list-style: none; text-align: center;}
+.thanhphantrang li { 
+  display: inline-block; margin: 5px; width: 45px; height: 45px; line-height: 45px; 
+  background: darkcyan; border-radius: 50%;}
+.thanhphantrang li a { color:white !important; font-weight: bold;}
+.thanhphantrang li.selected {background: orange }
+.thanhphantrang li:hover {background: darkolivegreen; cursor: pointer; }
+
+/* CSS cho form Thanh toán đơn hàng */
+#frmthanhtoan {
+  border: 1px solid darkcyan;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+#frmthanhtoan > h2 {
+  background: darkcyan;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#frmthanhtoan > div {
+  margin: 15px 20px;
+}
+
+#frmthanhtoan label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#frmthanhtoan input {
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+#frmthanhtoan button {
+  padding: 10px 20px;
+  border: none;
+  background: darkcyan;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+#frmthanhtoan button:hover {
+  background: #007373;
+}
+
+/* CSS cho giỏ hàng */
+/* CSS cho giỏ hàng */
+#giohang {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#giohang h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: darkcyan;
+}
+
+#giohang div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#giohang div img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+#giohang div span {
+  flex: 1;
+  font-size: 1em;
+  margin-right: 20px;
+}
+
+#giohang div input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-right: 20px;
+}
+
+#giohang div a {
+  color: #ff0000;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+#giohang div a:hover {
+  text-decoration: underline;
+}
+
+#giohang div Link {
+  margin-left: auto;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+#giohang div Link:hover {
+  background-color: #218838;
+}
+
+#giohang button {
+  padding: 10px 20px;
+  border: none;
+  background: #dc3545;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+#giohang button:hover {
+  background: #c82333;
+}
+
+#giohang .total {
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+  color: darkcyan;
+}
+
+
+
+/* .thanhtoan{
+  border-radius: 5px;
+  border: none;
+  
+}
+button.thanhtoan:hover{
+  border-radius: 5px;
+  border: none;
+  background-color: blue;
+  
+} */
+
+.button {
+  --color: #00A97F;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+ }
+ 
+ .button::before, .button::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+ }
+ 
+ .button::before {
+  top: -1em;
+  left: -1em;
+ }
+ 
+ .button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+ }
+ 
+ .button:hover::before, .button:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ 
+ .button:hover {
+  color: rgb(10, 25, 30);
+ }
+ 
+ .button:active {
+  filter: brightness(.8);
+ }
+ 
